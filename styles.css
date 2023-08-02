@@ -143,6 +143,10 @@ nav img {
     border-bottom: 1px solid #d8d8d8;
 }
 
+.information--box:hover{
+    background-color: gainsboro;
+}
+
 .information--image {
     width: 35%;
 }
@@ -246,9 +250,9 @@ nav img {
     width: 40%;
 }
 
-.thesis--box--top{
+/* .thesis--box--top{
     background-color: gainsboro;
-}
+} */
 
 
 /* footer */
