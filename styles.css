@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: darkslategray;
 }
 
 ul {
@@ -20,6 +21,10 @@ a {
 
 .text--small{
     font-size: 14px;
+}
+
+h2 {
+    font-weight: 700;
 }
 
 /* header */
@@ -154,3 +159,102 @@ nav img {
 .information--text a {
     color: cornflowerblue;
 }
+
+/* course */
+
+.course {
+    background-color: lavender;
+}
+
+.course h2 {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.course--grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 0 72px 32px;
+}
+
+.course--grid--box {
+    background-color: white;
+    padding-bottom: 24px;
+}
+
+.course--grid--box img{
+    width: 100%;
+}
+
+.course--grid--box h4 {
+    padding: 16px;
+}
+
+.course--grid--box p {
+    padding: 8px 16px 0px;
+}
+
+/* thesis */
+
+.thesis{
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 32px;
+}
+
+.thesis h2{
+    padding: 32px 0;
+    text-align: center;
+}
+
+.thesis--info{
+    display: flex;
+}
+
+.thesis h4{
+    padding: 0 24px 8px;
+}
+
+.thesis--left p {
+    padding-left: 24px;
+}
+
+.thesis--left{
+    width: 60%;
+    border-right:1px solid #d8d8d8;
+}
+
+.thesis--left video{
+    width: 100%;
+    padding: 0 24px 24px;
+}
+
+.thesis--right{
+    width: 40%;
+}
+
+.thesis--box--top{
+    background-color: gainsboro;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 0;
+    height: 72px;
+}
+
+footer p, footer a {
+    color: #4a4a4a;
+    font-size: 12px;
+}
+
+.footer--right ul{
+    display: flex;
+    gap: 16px;
+}
+
