@@ -93,6 +93,10 @@ nav img {
     gap: 16px;
 }
 
+.hero--right p{
+    font-size: 20px;
+}
+
 .hero button {
     padding: 8px 0;
     background-color: #4a4a4a;
@@ -141,6 +145,10 @@ nav img {
 
 .information--image {
     width: 35%;
+}
+
+.information--image--mobile {
+    display: none;
 }
 
 .information--image img {
@@ -203,6 +211,10 @@ nav img {
     padding-bottom: 32px;
 }
 
+.thesis--mobile{
+    display: none;
+}
+
 .thesis h2{
     padding: 32px 0;
     text-align: center;
@@ -258,3 +270,138 @@ footer p, footer a {
     gap: 16px;
 }
 
+/* mobile site let go*/
+
+@media screen and (max-width: 768px) {
+    .nav--left, .nav--right{
+        display: none;
+    }
+
+    .nav--mobile {
+        width: 100%;
+        display: block;
+    }
+
+    .nav--mobile ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .hero--left{
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero--right{
+        width: 100%;
+        gap:0;
+        padding: 32px 16px;
+    }
+
+    .hero p{
+        padding: 32px 0 24px;
+    }
+
+    .information ,.information--right{
+        width: 100%;
+    }
+
+    .information--left, .information--image {
+        display: none;
+    }
+
+    .information--box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information--image--mobile {
+        display: inline;
+        width: 100%;
+    }
+
+    .information--image--mobile img {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    .information--text{
+        width: 100%;
+    }
+
+    .information--text--mobile--notlast{
+        padding-bottom: 32px;
+    }
+
+    .information--text--mobile--last{
+        padding-bottom: 16px;
+    }
+
+    .course{
+        background-color: whitesmoke;
+        border-bottom: 2px solid #d8d8d8;
+    }
+    
+    .course h2{
+        padding: 32px 0 16px;
+    }
+
+    .course--grid{
+        grid-template-columns: 1fr;
+        padding: 0 16px 32px;
+        gap: 8px;
+    }
+
+    .course--grid--box img, .course--grid--box p{
+        display: none;
+    }
+
+    .course--grid--box {
+        padding: 16px 16px 24px;
+        background-color: gainsboro;
+    }
+
+    .course--grid--box h4 {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .thesis {
+        padding: 0 0 24px;
+        width:100%;
+        background-color: whitesmoke;
+    }
+
+    .thesis--left , .thesis--right {
+        display: none;
+    }
+
+    .thesis h2{
+        padding: 32px 0 16px;
+    }
+
+    .thesis--mobile{
+        display:inline;
+        width: 100%;
+    }
+
+    .thesis--mobile video{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+        padding:16px;
+    }
+
+    .footer--right{
+        display: none;
+    }
+}
